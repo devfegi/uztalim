@@ -1,0 +1,43 @@
+.checkbox {
+	margin-top: 30rem;
+
+	label {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 10rem;
+		margin-top: 20rem;
+		font-size: 13rem;
+		cursor: pointer;
+
+		input {
+			display: none;
+
+			&:checked+span {
+				background-image: url("../img/svg/checkmark.svg");
+			}
+		}
+
+		span {
+			display: block;
+			width: 100%;
+			max-width: 18rem;
+			height: 18rem;
+			border: 2rem solid #727279;
+			background-size: 10rem;
+			background-position: center;
+			background-repeat: no-repeat;
+			border-radius: 4rem;
+			filter: invert(50%);
+		}
+
+		i {
+			font-style: normal;
+			font-size: 12rem;
+			line-height: 53rem;
+			font-weight: 300;
+			letter-spacing: 0.058em;
+			color: #727279;
+		}
+	}
+}
