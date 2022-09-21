@@ -1,0 +1,164 @@
+	.table {
+		background: linear-gradient(0deg, #F8FCFB, #F8FCFB),
+			#FFFFFF;
+		box-shadow: 0px 1px 2px rgba(40, 41, 61, 0.1);
+		border-radius: 8rem;
+		padding: 20rem 0;
+
+		table {
+			border-collapse: collapse;
+			width: 100%;
+			text-align: center;
+
+			thead {
+				tr {
+					th {
+						font-weight: 600;
+						font-size: 14rem;
+						line-height: 125%;
+						color: #8A91A6;
+						position: relative;
+						border-bottom: 1px solid #F3F3F3;
+						text-align: left;
+						padding: 0 20rem 20rem;
+					}
+
+					p {
+						display: inline-block;
+						font-weight: 600;
+						font-size: 14rem;
+						line-height: 125%;
+						color: #8A91A6;
+						cursor: pointer;
+						border-bottom: 1px dashed #8A91A6;
+						padding-bottom: 2rem;
+					}
+				}
+			}
+
+			tbody {
+				tr {
+					position: relative;
+					transition: all 0.3s ease;
+
+					&:hover {
+						background-color: rgba(204, 204, 204, 0.1);
+					}
+
+					th {
+						font-weight: 500;
+						font-size: 16rem;
+						line-height: 140%;
+						color: #8A91A6;
+						border-bottom: 1px solid #F3F3F3;
+						text-align: left;
+						padding-left: 20rem;
+					}
+
+					td {
+						border-bottom: 1px solid #F3F3F3;
+						padding: 20rem;
+						font-weight: 500;
+						color: #202339;
+						text-align: left;
+					}
+				}
+			}
+		}
+
+		&__name {
+			font-weight: 600;
+			color: #264EA1;
+		}
+
+		&__status {
+			display: inline-block;
+			min-width: 83rem;
+			font-weight: 400;
+			font-size: 11rem;
+			line-height: 140%;
+			border-radius: 4rem;
+			padding: 3rem 10rem;
+
+			&--pending {
+				color: #459A81;
+				background: #D5EAE5;
+			}
+
+			&--processed {
+				color: #70ACC6;
+				background: rgba(112, 172, 198, 0.3);
+			}
+
+			&--successfully {
+				color: #C4C4C4;
+				background: rgba(196, 196, 196, 0.3);
+			}
+
+			&--rejected {
+				color: #E75A5A;
+				background: #F3D9D8;
+			}
+		}
+
+		&__link {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		&__flex {
+			display: flex;
+			align-items: center;
+		}
+
+		&__logo {
+			width: 50rem;
+			height: 21rem;
+			margin-right: 5rem;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+				mix-blend-mode: darken;
+			}
+		}
+
+		&__box {
+			display: flex;
+			align-items: center;
+			padding-left: 10rem;
+		}
+
+		&__avatar {
+			width: 47rem;
+			height: 47rem;
+			margin-right: 20rem;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				border-radius: 50%;
+			}
+		}
+
+		&__holder {
+			display: inline-block;
+			position: relative;
+
+			&.active {
+				.popup-block {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+		}
+
+		&__id {
+			padding-left: 0 !important;
+		}
+	}

@@ -1,0 +1,50 @@
+.breadcrumbs {
+	position: relative;
+	z-index: 1;
+	margin-top: 185rem;
+
+	@media (max-width: 991px) {
+		margin-top: 400rem;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	&__item {
+		font-weight: 500;
+		color: #282D33;
+	}
+
+	&__item+&__item {
+		padding-left: 5rem;
+	}
+
+	&__link {
+		position: relative;
+		padding-right: 25rem;
+		font-weight: 500;
+		color: #C4C4C4;
+
+		&:hover {
+			color: #282D33;
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			right: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			background-image: url('../img/svg/arrow-right-bread.svg');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			display: inline-block;
+			width: 20rem;
+			height: 20rem;
+		}
+	}
+}

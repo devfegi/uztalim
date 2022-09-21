@@ -1,0 +1,45 @@
+.faq {
+	padding-top: 90rem;
+
+	&__content {
+		margin-top: 50rem;
+	}
+
+	&__item {
+		border-top: 1rem solid #EDEDED;
+		border-bottom: 1rem solid #EDEDED;
+	}
+
+	&__title {
+		position: relative;
+		font-size: 22rem;
+		padding: 33rem 0;
+		cursor: pointer;
+
+		&::before {
+			content: '';
+			background-image: url('../img/svg/plus.svg');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			position: absolute;
+			top: 30rem;
+			right: 5rem;
+			width: 34rem;
+			height: 34rem;
+			transition: all 0.3s ease;
+		}
+
+		&.active {
+			&:before {
+				transform: rotate(45deg);
+			}
+		}
+	}
+
+	&__body {
+		display: none;
+		line-height: calc(24 / 15);
+		padding-bottom: 20rem;
+	}
+}
